@@ -28,7 +28,7 @@ public class CellphoneTest {
 		// 访问手机类的成员方法
 		long number = 13032811532L;
 		iphone12.call(number);
-		iphone12.sendMessage(number, "你好");
+		iphone12.sendMessage(number, "你好，130");
 	}
 
 }
