@@ -30,6 +30,27 @@ public class Cellphone {
 	 */
 	String color;
 
+	/**
+	 * 手机重量
+	 */
+	private Integer weight;
+
+	/**
+	 * 获得手机重量
+	 * 
+	 * @return
+	 */
+	public Integer getWeight() {
+		return weight;
+	};
+
+	/**
+	 * 显示手机重量
+	 */
+	public void showCellphoneInfo() {
+		System.out.println("手机的重量是：" + weight);
+	}
+
 	/************************* 成员方法 *************************/
 
 	/**
