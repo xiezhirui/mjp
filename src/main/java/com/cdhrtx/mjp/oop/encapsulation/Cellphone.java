@@ -86,6 +86,19 @@ public class Cellphone {
 		this.weight = weight;
 	}
 
+	public Cellphone() {
+		System.out.println("我是一个无参构造器。This的内容是：" + this);
+	}
+
+	public Cellphone(String model) {
+		this.model = model;
+	}
+
+	public Cellphone(String model, String color) {
+		this(model);// 调用上面的一个参数的构造方法
+		this.color = color;
+	}
+
 	/************************* 成员方法 *************************/
 
 	/**

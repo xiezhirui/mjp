@@ -51,6 +51,36 @@ public class Cellphone {
 		System.out.println("手机的重量是：" + weight);
 	}
 
+	/************************* 无参构造器 *************************/
+	/**
+	 * 无参构造器
+	 */
+	public Cellphone() {
+		System.out.println("我是一个无参构造器" + this);
+	}
+
+	/**
+	 * 有参构造器
+	 */
+	public Cellphone(String model) {
+		this.model = model;
+	}
+
+	/**
+	 * 全参构造器
+	 * 
+	 * @param model
+	 * @param brand
+	 * @param price
+	 * @param color
+	 */
+	public Cellphone(String model, String brand, Integer price, String color) {
+		this.model = model;
+		this.brand = brand;
+		this.price = price;
+		this.color = color;
+	}
+
 	/************************* 成员方法 *************************/
 
 	/**
