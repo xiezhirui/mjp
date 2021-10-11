@@ -1,7 +1,7 @@
-package com.cdhrtx.mjp.oop.encapsulation;
+package com.cdhrtx.mjp.oop.inheritance;
 
 /**
- * 手机类
+ * 功能机类（父类）
  * 
  * @author xzr
  *
@@ -9,6 +9,11 @@ package com.cdhrtx.mjp.oop.encapsulation;
 public class Cellphone {
 
 	/************************* 成员变量 *************************/
+
+	/**
+	 * 生产日期
+	 */
+	public String date;
 
 	/**
 	 * 手机型号
@@ -110,7 +115,6 @@ public class Cellphone {
 	 */
 	public void call(Long number) {
 		System.out.println("正在给 " + number + " 打电话");
-
 	}
 
 	/**
