@@ -34,6 +34,13 @@ public class SmartPhone extends Cellphone {
 		System.out.println(model + " 正在刷抖音。。。");
 	}
 
+	/**
+	 * 发微信
+	 */
+	public void sendMessage(long number, String message) {
+		System.out.println("正在给 " + number + " 发微信：" + message);
+	}
+	
 	/************************* 子类构造方法 *************************/
 
 	public SmartPhone() {
