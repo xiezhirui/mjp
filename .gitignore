@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled class file
 *.class
 
@@ -41,3 +42,40 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+=======
+#project logs
+logs/
+out/
+
+#jrebel
+rebel.xml
+
+#maven ignore
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+#eclipse ignore
+target/
+.settings/
+.project
+.classpath
+
+#idea ignore
+.idea/
+.vertx/*
+*target*
+.idea/*
+*.ipr
+*.iml
+*.iws
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/build/
+>>>>>>> branch 'master' of git@github.com:xiezhirui/mjp.git
