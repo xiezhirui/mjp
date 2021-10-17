@@ -6,7 +6,7 @@ package com.cdhrtx.mjp.oop.inheritance;
  * @author xzr
  *
  */
-public class Cellphone {
+public class Cellphone extends Object {
 
 	/************************* 成员变量 *************************/
 

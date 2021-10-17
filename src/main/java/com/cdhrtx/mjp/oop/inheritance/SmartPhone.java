@@ -25,6 +25,11 @@ public class SmartPhone extends Cellphone {
 
 	/************************* 子类成员方法 *************************/
 
+	@Override
+	public String toString() {
+		return "SmartPhone [wirelessCharging=" + wirelessCharging + "]";
+	}
+
 	/**
 	 * 播放视频
 	 * 
@@ -38,10 +43,10 @@ public class SmartPhone extends Cellphone {
 	 * 发微信
 	 */
 	public void sendMessage(long number, String message) {
-		super.sendMessage(13678009869L, "操你妈，牛个鸡巴");
+		super.sendMessage(13678009869L, "你牛个鸡巴");
 		System.out.println("正在给 " + number + " 发微信：" + message);
 	}
-	
+
 	/************************* 子类构造方法 *************************/
 
 	public SmartPhone() {
