@@ -10,17 +10,21 @@ public interface UserService {
 	/**
 	 * 网站名称 常量
 	 */
-	public static final String WEB_SITE_NAME = "淘宝网";
+	// 默认为public static finanl，因此可以不写
+	// 完整的为：public static final String WEB_SITE_NAME = "淘宝网";
+	String WEB_SITE_NAME = "淘宝网";
 
 	/**
 	 * 登录 抽象方法
 	 */
-	public abstract void login();
+	// 默认为：public abstract
+	void login();
 
 	/**
-	 * 默认方法的定义
+	 * 重置密码 默认方法的定义
 	 */
-	public default void resetPassword() {
+	// 默认方法的权限默认为public
+	default void resetPassword() {
 		System.out.println("请输入手机号并点击发送验证码：");
 		sendCode();
 		System.out.println("请输入收到的手机验证码：");
@@ -37,9 +41,10 @@ public interface UserService {
 	}
 
 	/**
-	 * 统计网站注册的用户信息
+	 * 统计网站注册的用户信息 静态方法的定义
 	 */
-	public static void statistics() {
+	// 默认也是public
+	static void statistics() {
 		long count = getAllUserInfo();
 		System.out.println("当前网站的注册人数是" + count);
 	}
